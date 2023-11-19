@@ -24,8 +24,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/GARGO/source/repos/PokemonMVC/PokemonApp/Views/Pokemon/FormularioPokemon.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9rZW1vblxGb3JtdWxhcmlvUG9rZW1vbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/GARGO/source/repos/PokemonMVC/PokemonApp/Views/Pokemon/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9rZW1vblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GARGO/source/repos/PokemonMVC/PokemonApp/Views/Pokemon/PokemonsLista.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9rZW1vblxQb2tlbW9uc0xpc3RhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GARGO/source/repos/PokemonMVC/PokemonApp/Views/Pokemon/PokemonsLista2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9rZW1vblxQb2tlbW9uc0xpc3RhMi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/GARGO/source/repos/PokemonMVC/PokemonApp/Views/Shared/Error.cshtml]

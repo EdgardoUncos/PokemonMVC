@@ -7,7 +7,7 @@ namespace PokemonApp.Controllers
     public class PokemonController : Controller
     {
         private readonly PokemonNegocio _negocio;
-
+        public List<Pokemon> listaPokemon;
         public PokemonController(PokemonNegocio negocio)
         {
             _negocio = negocio;
@@ -15,8 +15,30 @@ namespace PokemonApp.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            List<Pokemon> listaPokemon = _negocio.listar();   
+            listaPokemon = _negocio.listar();   
             return View(listaPokemon);
         }
+
+        [HttpGet]
+        public IActionResult PokemonsLista()
+        {
+            listaPokemon = _negocio.listar();
+            return View(listaPokemon);
+        }
+
+        [HttpGet]
+        public IActionResult PokemonsLista2()
+        {
+            listaPokemon = _negocio.listar();
+            return View(listaPokemon);
+        }
+
+        [HttpGet]
+        public IActionResult FormularioPokemon()
+        {
+            return View();
+        }
+
+
     }
 }
