@@ -1,7 +1,11 @@
+using negocio;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+// Inyeccion de dependencias
+builder.Services.AddSingleton<PokemonNegocio>();
 
 var app = builder.Build();
 

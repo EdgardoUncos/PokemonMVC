@@ -1,0 +1,29 @@
+﻿@model IEnumerable<dominio.Pokemon>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Hola!</h1>
+<p>Llegaste al Pokedex Web, tu lugar Pokemon...</p>
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        @foreach (var item in Model)
+        {
+            <div class="col">
+                <div class="card">
+                    <img src="@item.UrlImagen" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Nombre</h5>
+                        <p class="card-text">@item.Descripcion</p>
+                        <a href="Pokemon/VerPokemon?id=@item.Id">Ver Detalle</a>
+                        <button class="btn btn-primary">Ejemplo</button>
+                    </div>
+                </div>
+
+            </div>
+        }
+    </div>
+
+</div>
+

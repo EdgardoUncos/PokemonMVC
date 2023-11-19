@@ -1,0 +1,11 @@
+C:\Users\GARGO\source\repos\PokemonMVC\dominio\bin\Debug\net6.0\dominio.deps.json
+C:\Users\GARGO\source\repos\PokemonMVC\dominio\bin\Debug\net6.0\dominio.dll
+C:\Users\GARGO\source\repos\PokemonMVC\dominio\bin\Debug\net6.0\dominio.pdb
+C:\Users\GARGO\source\repos\PokemonMVC\dominio\obj\Debug\net6.0\dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GARGO\source\repos\PokemonMVC\dominio\obj\Debug\net6.0\dominio.AssemblyInfoInputs.cache
+C:\Users\GARGO\source\repos\PokemonMVC\dominio\obj\Debug\net6.0\dominio.AssemblyInfo.cs
+C:\Users\GARGO\source\repos\PokemonMVC\dominio\obj\Debug\net6.0\dominio.csproj.CoreCompileInputs.cache
+C:\Users\GARGO\source\repos\PokemonMVC\dominio\obj\Debug\net6.0\dominio.dll
+C:\Users\GARGO\source\repos\PokemonMVC\dominio\obj\Debug\net6.0\refint\dominio.dll
+C:\Users\GARGO\source\repos\PokemonMVC\dominio\obj\Debug\net6.0\dominio.pdb
+C:\Users\GARGO\source\repos\PokemonMVC\dominio\obj\Debug\net6.0\ref\dominio.dll

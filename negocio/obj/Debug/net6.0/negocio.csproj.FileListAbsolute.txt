@@ -1,0 +1,15 @@
+C:\Users\GARGO\source\repos\PokemonMVC\negocio\bin\Debug\net6.0\negocio.deps.json
+C:\Users\GARGO\source\repos\PokemonMVC\negocio\bin\Debug\net6.0\negocio.dll
+C:\Users\GARGO\source\repos\PokemonMVC\negocio\bin\Debug\net6.0\negocio.pdb
+C:\Users\GARGO\source\repos\PokemonMVC\negocio\bin\Debug\net6.0\dominio.dll
+C:\Users\GARGO\source\repos\PokemonMVC\negocio\bin\Debug\net6.0\dominio.pdb
+C:\Users\GARGO\source\repos\PokemonMVC\negocio\obj\Debug\net6.0\negocio.csproj.AssemblyReference.cache
+C:\Users\GARGO\source\repos\PokemonMVC\negocio\obj\Debug\net6.0\negocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GARGO\source\repos\PokemonMVC\negocio\obj\Debug\net6.0\negocio.AssemblyInfoInputs.cache
+C:\Users\GARGO\source\repos\PokemonMVC\negocio\obj\Debug\net6.0\negocio.AssemblyInfo.cs
+C:\Users\GARGO\source\repos\PokemonMVC\negocio\obj\Debug\net6.0\negocio.csproj.CoreCompileInputs.cache
+C:\Users\GARGO\source\repos\PokemonMVC\negocio\obj\Debug\net6.0\negocio.csproj.CopyComplete
+C:\Users\GARGO\source\repos\PokemonMVC\negocio\obj\Debug\net6.0\negocio.dll
+C:\Users\GARGO\source\repos\PokemonMVC\negocio\obj\Debug\net6.0\refint\negocio.dll
+C:\Users\GARGO\source\repos\PokemonMVC\negocio\obj\Debug\net6.0\negocio.pdb
+C:\Users\GARGO\source\repos\PokemonMVC\negocio\obj\Debug\net6.0\ref\negocio.dll
