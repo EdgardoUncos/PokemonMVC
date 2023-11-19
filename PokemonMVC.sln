@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonApp", "PokemonApp\PokemonApp.csproj", "{454E6580-B76D-4848-9E6D-E416842BB5EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dominio", "dominio\dominio.csproj", "{BCF9D599-6293-4102-B43E-A70F30460FD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "negocio", "negocio\negocio.csproj", "{DBF13B42-F080-40F8-8E17-FEDAE6E68BC5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{454E6580-B76D-4848-9E6D-E416842BB5EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{454E6580-B76D-4848-9E6D-E416842BB5EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{454E6580-B76D-4848-9E6D-E416842BB5EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{454E6580-B76D-4848-9E6D-E416842BB5EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCF9D599-6293-4102-B43E-A70F30460FD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCF9D599-6293-4102-B43E-A70F30460FD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCF9D599-6293-4102-B43E-A70F30460FD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCF9D599-6293-4102-B43E-A70F30460FD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBF13B42-F080-40F8-8E17-FEDAE6E68BC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBF13B42-F080-40F8-8E17-FEDAE6E68BC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBF13B42-F080-40F8-8E17-FEDAE6E68BC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBF13B42-F080-40F8-8E17-FEDAE6E68BC5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {63BB29BF-D56E-4C66-9FB3-CA6EBAF9F056}
+	EndGlobalSection
+EndGlobal
