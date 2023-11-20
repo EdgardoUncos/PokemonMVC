@@ -4,6 +4,7 @@
     ViewData["Title"] = "DetallePokemon";
 }
 
+
 <h1>DetallePokemon</h1>
 
 <div>
@@ -34,6 +35,19 @@
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Descripcion)
         </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Tipo.Descripcion)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Tipo.Descripcion)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Debilidad.Descripcion)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Debilidad.Descripcion)
+        </dd>
+
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.UrlImagen)
         </dt>

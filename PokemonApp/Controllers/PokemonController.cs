@@ -3,6 +3,7 @@ using negocio;
 using dominio;
 using PokemonApp.Models;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Reflection;
 
 namespace PokemonApp.Controllers
 {
@@ -67,7 +68,27 @@ namespace PokemonApp.Controllers
             if (id == null)
                 return RedirectToAction("Index");
             Pokemon seleccionado = (_negocio.listar(id))[0];
+                                  
             return View(seleccionado);
+        }
+
+        [HttpGet]
+        public IActionResult ModificarPokemon(string id)
+        {
+            if (id == null) return RedirectToAction("Index");
+
+            Pokemon seleccionado = _negocio.listar(id)[0];
+            PokemonVM pokemonVM = new PokemonVM();
+            pokemonVM.Pokemon = seleccionado;
+
+            return View(pokemonVM);
+        }
+
+        [HttpPost]
+        public IActionResult ModificarPokemon(PokemonVM modificado)
+        {
+            var pokemonModificado = modificado;
+            return RedirectToAction("Index");
         }
 
         //public IEnumerable<SelectListItem> GetSelectListItems(IEnumerable<PokemonApp.Models.Elemento> elements)
@@ -84,7 +105,7 @@ namespace PokemonApp.Controllers
         //    }
         //    return selectList;
         //}
-        
+
 
 
     }
