@@ -61,6 +61,15 @@ namespace PokemonApp.Controllers
             return RedirectToAction("Index");
         }
 
+        [HttpGet]
+        public IActionResult DetallePokemon(string id) 
+        {
+            if (id == null)
+                return RedirectToAction("Index");
+            Pokemon seleccionado = (_negocio.listar(id))[0];
+            return View(seleccionado);
+        }
+
         //public IEnumerable<SelectListItem> GetSelectListItems(IEnumerable<PokemonApp.Models.Elemento> elements)
         //{
         //    var selectList = new List<SelectListItem>();
