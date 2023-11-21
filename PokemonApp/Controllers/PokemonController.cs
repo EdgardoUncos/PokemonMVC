@@ -23,9 +23,13 @@ namespace PokemonApp.Controllers
         }
 
         [HttpGet]
-        public IActionResult PokemonsLista()
+        public IActionResult PokemonsLista(string buscar ="")
         {
             listaPokemon = _negocio.listar();
+
+            if(!string.IsNullOrEmpty(buscar))
+                listaPokemon = listaPokemon.FindAll(x => x.Nombre.ToUpper().Contains(buscar.ToUpper()));
+
             return View(listaPokemon);
         }
 

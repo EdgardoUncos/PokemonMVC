@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oY2y0tLQkyyaDmZ6kZbNuC3Efjp4HunxJbo7VoO1xEPrGZItuGjsJSsRQ8lJb0RfeshopQ4GbtKXpAZjCYgdJg==",
+  "dgSpecHash": "v0W722VP0BAMbzmHnZx9M+Pq0pX6WvZB6XpKIPrTIowMzlCS9ZBZKTu1yV7WnjSZvDHCHseGkBQAbdduK+bxDA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\GARGO\\source\\repos\\PokemonMVC\\negocio\\negocio.csproj",
+  "projectFilePath": "C:\\Users\\GARGO\\source\\repos\\MVC-Proyectos\\PokemonMVC\\negocio\\negocio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\GARGO\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\GARGO\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

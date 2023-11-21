@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\GARGO\\source\\repos\\PokemonMVC\\negocio\\negocio.csproj": {}
+    "C:\\Users\\GARGO\\source\\repos\\MVC-Proyectos\\PokemonMVC\\negocio\\negocio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\GARGO\\source\\repos\\PokemonMVC\\dominio\\dominio.csproj": {
+    "C:\\Users\\GARGO\\source\\repos\\MVC-Proyectos\\PokemonMVC\\dominio\\dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\GARGO\\source\\repos\\PokemonMVC\\dominio\\dominio.csproj",
+        "projectUniqueName": "C:\\Users\\GARGO\\source\\repos\\MVC-Proyectos\\PokemonMVC\\dominio\\dominio.csproj",
         "projectName": "dominio",
-        "projectPath": "C:\\Users\\GARGO\\source\\repos\\PokemonMVC\\dominio\\dominio.csproj",
+        "projectPath": "C:\\Users\\GARGO\\source\\repos\\MVC-Proyectos\\PokemonMVC\\dominio\\dominio.csproj",
         "packagesPath": "C:\\Users\\GARGO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\GARGO\\source\\repos\\PokemonMVC\\dominio\\obj\\",
+        "outputPath": "C:\\Users\\GARGO\\source\\repos\\MVC-Proyectos\\PokemonMVC\\dominio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -62,14 +62,14 @@
         }
       }
     },
-    "C:\\Users\\GARGO\\source\\repos\\PokemonMVC\\negocio\\negocio.csproj": {
+    "C:\\Users\\GARGO\\source\\repos\\MVC-Proyectos\\PokemonMVC\\negocio\\negocio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\GARGO\\source\\repos\\PokemonMVC\\negocio\\negocio.csproj",
+        "projectUniqueName": "C:\\Users\\GARGO\\source\\repos\\MVC-Proyectos\\PokemonMVC\\negocio\\negocio.csproj",
         "projectName": "negocio",
-        "projectPath": "C:\\Users\\GARGO\\source\\repos\\PokemonMVC\\negocio\\negocio.csproj",
+        "projectPath": "C:\\Users\\GARGO\\source\\repos\\MVC-Proyectos\\PokemonMVC\\negocio\\negocio.csproj",
         "packagesPath": "C:\\Users\\GARGO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\GARGO\\source\\repos\\PokemonMVC\\negocio\\obj\\",
+        "outputPath": "C:\\Users\\GARGO\\source\\repos\\MVC-Proyectos\\PokemonMVC\\negocio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -89,8 +89,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\GARGO\\source\\repos\\PokemonMVC\\dominio\\dominio.csproj": {
-                "projectPath": "C:\\Users\\GARGO\\source\\repos\\PokemonMVC\\dominio\\dominio.csproj"
+              "C:\\Users\\GARGO\\source\\repos\\MVC-Proyectos\\PokemonMVC\\dominio\\dominio.csproj": {
+                "projectPath": "C:\\Users\\GARGO\\source\\repos\\MVC-Proyectos\\PokemonMVC\\dominio\\dominio.csproj"
               }
             }
           }

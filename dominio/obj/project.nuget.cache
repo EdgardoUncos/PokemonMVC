@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eZMO7BGXbschqkkks0AkcOfOQYrAfKhhi+mVKYzMAhdyayhpdkVw6RqKh1gxkPsIRXb2EAhbtCGGFYSbRazgig==",
+  "dgSpecHash": "3tbjLuqLej2UoyF/xyjpmAjgDbj5Ube3lxjU0430ykIk5R102z/upXyIP3nze2oRtdOWlWlM42ptXqPtMypPGA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\GARGO\\source\\repos\\PokemonMVC\\dominio\\dominio.csproj",
+  "projectFilePath": "C:\\Users\\GARGO\\source\\repos\\MVC-Proyectos\\PokemonMVC\\dominio\\dominio.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

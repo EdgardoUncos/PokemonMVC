@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6C6qYNolutCzf2fWAlHAn47OjyK1oFWIVyodHd+C99zYycjFlQxAQR4zrcJJz7DwkQy+VU+aAOOLmVebe+Neww==",
+  "dgSpecHash": "bh3Hq/7VBTFUW2TK7L4BOoIBT+Kw8uAoie8t9f5q9PA2Tzp4hFmdTF8WLeDCJkM1uWSY5NYY/oTACt+x7DVtCg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\GARGO\\source\\repos\\PokemonMVC\\PokemonApp\\PokemonApp.csproj",
+  "projectFilePath": "C:\\Users\\GARGO\\source\\repos\\MVC-Proyectos\\PokemonMVC\\PokemonApp\\PokemonApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\GARGO\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\GARGO\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

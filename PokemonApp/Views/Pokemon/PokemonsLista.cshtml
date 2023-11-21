@@ -3,10 +3,61 @@
 @{
     ViewData["Title"] = "PokemonsLista";
 }
+@{
+    negocio.ElementoNegocio negocio = new negocio.ElementoNegocio();
+    SelectList list = new SelectList(negocio.listar());
+}
 
 <h2>Lista de Pokemons</h2>
 
+
 <div class="container">
+
+    @* Codigo para el filtro de Búsqueda *@
+    
+
+    <div class="row">
+        <div class="col-6">
+            <form method="get" action=@Url.Action("PokemonsLista","Pokemon")>
+                <div class="mb-3">
+                    @Html.TextBox("Buscar", null, new { placeholder = "texto de búsqueda", @class = "form-control"})
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-3">
+            <div class="mb-3">
+                <label class="form-label">Campo</label>
+                @Html.DropDownList("Id", list, "Descripcion", new { @class = "form-control"})
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="mb-3">
+                <label class="form-label">Criterio</label>
+                @Html.DropDownList("Id", list, "Descripcion", new { @class = "form-control"})
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="mb-3">
+                <label class="form-label">Filtro</label>
+                <input type="text" class="form-control" />
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="mb-3">
+                <label>Estado</label>
+                @Html.DropDownList("Id", list, "Descripcion", new { @class = "form-control"})
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <button class="btn btn-primary">Buscar</button>
+            <button class="btn btn-secondary">Reiniciar</button>
+        </div>
+    </div>
 
     <table class="table">
         <thead>

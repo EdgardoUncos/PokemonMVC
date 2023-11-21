@@ -9872,11 +9872,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\GARGO\\source\\repos\\PokemonMVC\\PokemonApp\\PokemonApp.csproj",
+      "projectUniqueName": "C:\\Users\\GARGO\\source\\repos\\MVC-Proyectos\\PokemonMVC\\PokemonApp\\PokemonApp.csproj",
       "projectName": "PokemonApp",
-      "projectPath": "C:\\Users\\GARGO\\source\\repos\\PokemonMVC\\PokemonApp\\PokemonApp.csproj",
+      "projectPath": "C:\\Users\\GARGO\\source\\repos\\MVC-Proyectos\\PokemonMVC\\PokemonApp\\PokemonApp.csproj",
       "packagesPath": "C:\\Users\\GARGO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\GARGO\\source\\repos\\PokemonMVC\\PokemonApp\\obj\\",
+      "outputPath": "C:\\Users\\GARGO\\source\\repos\\MVC-Proyectos\\PokemonMVC\\PokemonApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -9896,11 +9896,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\GARGO\\source\\repos\\PokemonMVC\\dominio\\dominio.csproj": {
-              "projectPath": "C:\\Users\\GARGO\\source\\repos\\PokemonMVC\\dominio\\dominio.csproj"
+            "C:\\Users\\GARGO\\source\\repos\\MVC-Proyectos\\PokemonMVC\\dominio\\dominio.csproj": {
+              "projectPath": "C:\\Users\\GARGO\\source\\repos\\MVC-Proyectos\\PokemonMVC\\dominio\\dominio.csproj"
             },
-            "C:\\Users\\GARGO\\source\\repos\\PokemonMVC\\negocio\\negocio.csproj": {
-              "projectPath": "C:\\Users\\GARGO\\source\\repos\\PokemonMVC\\negocio\\negocio.csproj"
+            "C:\\Users\\GARGO\\source\\repos\\MVC-Proyectos\\PokemonMVC\\negocio\\negocio.csproj": {
+              "projectPath": "C:\\Users\\GARGO\\source\\repos\\MVC-Proyectos\\PokemonMVC\\negocio\\negocio.csproj"
             }
           }
         }
