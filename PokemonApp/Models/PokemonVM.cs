@@ -5,13 +5,26 @@ namespace PokemonApp.Models
 {
     public class PokemonVM
     {
+        // Constructor
         public PokemonVM() 
         { 
             Pokemon = new Pokemon();
             Pokemon.Tipo = new Elemento();
             Pokemon.Debilidad = new Elemento();
         }
+
+        public PokemonVM(string tipo, string debilidad)
+        {
+            Pokemon = new Pokemon();
+            Pokemon.Tipo = new Elemento();
+            Pokemon.Debilidad = new Elemento();
+            Pokemon.Tipo.Id = int.Parse(tipo);
+            Pokemon.Debilidad.Id = int.Parse(debilidad);
+
+        }
         private SelectList _PokemonTipoSelectList { get; set; }
+
+        private SelectList _PokemonDebilidadSelectList { get; set; }
         public Pokemon Pokemon { get; set; }
         public SelectList PokemonTipoSelectList
         {
@@ -20,11 +33,32 @@ namespace PokemonApp.Models
                 if (_PokemonTipoSelectList != null)
                     return _PokemonTipoSelectList;
 
-                return new SelectList(ObtenerElementos(), "Id", "Descripcion");
+                if (Pokemon.Tipo.Id > 0)
+                    return new SelectList(ObtenerElementos(), "Id", "Descripcion", Pokemon.Tipo.Id.ToString());
+                else
+                    return new SelectList(ObtenerElementos(), "Id", "Descripcion");
             }
             set
             {
                 _PokemonTipoSelectList = value;
+            }
+
+        }
+        public SelectList PokemonDebilidadSelectList
+        {
+            get
+            {
+                if (_PokemonDebilidadSelectList != null)
+                    return _PokemonDebilidadSelectList;
+
+                if (Pokemon.Debilidad.Id > 0)
+                    return new SelectList(ObtenerElementos(), "Id", "Descripcion", Pokemon.Debilidad.Id.ToString());
+                else
+                    return new SelectList(ObtenerElementos(), "Id", "Descripcion");
+            }
+            set
+            {
+                _PokemonDebilidadSelectList = value;
             }
 
         }

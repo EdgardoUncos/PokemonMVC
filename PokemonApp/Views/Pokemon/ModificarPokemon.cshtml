@@ -8,7 +8,7 @@
 <hr />
 <div class="row">
     <div class="col-12">
-        <form asp-action="FormularioPokemon">
+        <form asp-action="ModificarPokemon">
 
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
@@ -47,7 +47,7 @@
             </div>
             <div class="form-group mt-1">
                 <label asp-for="Pokemon.Debilidad" class="control-label"></label>
-                @Html.DropDownList("Debilidad", Model.PokemonTipoSelectList as SelectList, "Descripcion", new { @class = "form-control"})
+                @Html.DropDownList("Debilidad", Model.PokemonDebilidadSelectList as SelectList, "Descripcion", new { @class = "form-control"})
                
             </div>
             <div class="form-group">
@@ -56,7 +56,7 @@
                 <span asp-validation-for="Pokemon.UrlImagen" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Modificar" class="btn btn-primary" />
+                <input type="submit" value="Modificar" class="btn btn-primary"/>
             </div>
         </form>
     </div>

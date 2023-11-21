@@ -63,12 +63,35 @@ namespace PokemonApp.Controllers
         }
 
         [HttpGet]
+        public IActionResult FormularioPokemon2()
+        {
+            Pokemon pokemon = new Pokemon();
+            ElementoNegocio negocio = new ElementoNegocio();
+            ViewBag.listaElementos = negocio.listar();
+
+            return View(pokemon);
+        }
+
+        [HttpPost]
+        public IActionResult FormularioPokemon2(Pokemon pokemon)
+        {
+            int TipoSeleccionado = int.Parse(Request.Form["Tipo"].ToString());
+            int DevilidadSeleccionada = int.Parse(Request.Form["Debilidad"].ToString());
+            
+
+            // Guardar en base de datos
+            _negocio.agregarConSP(pokemon);
+
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
         public IActionResult DetallePokemon(string id) 
         {
             if (id == null)
                 return RedirectToAction("Index");
             Pokemon seleccionado = (_negocio.listar(id))[0];
-                                  
+                               
             return View(seleccionado);
         }
 
@@ -78,18 +101,53 @@ namespace PokemonApp.Controllers
             if (id == null) return RedirectToAction("Index");
 
             Pokemon seleccionado = _negocio.listar(id)[0];
-            PokemonVM pokemonVM = new PokemonVM();
+            PokemonVM pokemonVM = new PokemonVM(seleccionado.Tipo.Id.ToString(), seleccionado.Debilidad.Id.ToString());
             pokemonVM.Pokemon = seleccionado;
-
+            object captura = pokemonVM.PokemonTipoSelectList.SelectedValue;
             return View(pokemonVM);
         }
 
         [HttpPost]
         public IActionResult ModificarPokemon(PokemonVM modificado)
         {
-            var pokemonModificado = modificado;
+            int TipoSeleccionado = int.Parse(Request.Form["Tipo"].ToString());
+            int Debilidad = int.Parse(Request.Form["Debilidad"].ToString());
+
+            // Modificar el Pokemon
+            modificado.Pokemon.Tipo.Id = TipoSeleccionado;
+            modificado.Pokemon.Debilidad.Id = Debilidad;
+            _negocio.modificar(modificado.Pokemon);
+
             return RedirectToAction("Index");
         }
+
+        [HttpGet]
+        public IActionResult ModificarPokemon2(string id)
+        {
+            if (id == null) return RedirectToAction("Index");
+
+            Pokemon pokemon = _negocio.listar(id)[0];
+            ElementoNegocio negocio = new ElementoNegocio();
+            ViewBag.listaElementos = negocio.listar();
+            ViewBag.listaElementos2 = negocio.listar();
+
+            return View(pokemon);
+        }
+
+        [HttpPost]
+        public IActionResult ModificarPokemon2(Pokemon modificado)
+        {
+            int TipoSeleccionado = int.Parse(Request.Form["Tipo"].ToString());
+            int DevilidadSeleccionada = int.Parse(Request.Form["Debilidad"].ToString());
+
+
+            // Guardar en base de datos
+            _negocio.agregarConSP(modificado);
+
+            return RedirectToAction("Index");
+        }
+
+
 
         //public IEnumerable<SelectListItem> GetSelectListItems(IEnumerable<PokemonApp.Models.Elemento> elements)
         //{
