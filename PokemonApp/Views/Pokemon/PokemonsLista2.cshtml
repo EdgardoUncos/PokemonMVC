@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<dominio.Pokemon>
 
 @{
-    ViewData["Title"] = "PokemonsLista";
+    ViewData["Title"] = "PokemonsLista2";
 }
 @{
     negocio.ElementoNegocio negocio = new negocio.ElementoNegocio();
@@ -21,7 +21,7 @@
             if (searchText.length > 3) {
                 // Realiza una solicitud AJAX al backend para obtener resultados
                 $.ajax({
-                    url: '/Pokemon/PokemonsLista', // Reemplaza 'Controlador' con tu controlador real
+                    url: '@Url.Action("VistaTablaPokemon", "Pokemon")', // Reemplaza 'Controlador' con tu controlador real
                     type: 'GET',
                     data: { Buscar: searchText },
                     success: function (data) {
@@ -43,18 +43,7 @@
 <div class="container">
 
     @* Codigo para el filtro de Búsqueda *@
-    
 
-    <div class="row">
-        <div class="col-6">
-            <form method="get" action=@Url.Action("PokemonsLista","Pokemon")>
-                <div class="mb-3">
-                    @Html.TextBox("Buscar", null, new { placeholder = "texto de búsqueda", @class = "form-control"})
-                </div>
-                <button type="submit" class="btn btn-primary">Buscar</button>
-            </form>
-        </div>
-    </div>
 
     <div class="row">
         <div class="col-3">
@@ -82,7 +71,7 @@
             </div>
         </div>
     </div>
-    
+
     <div class="row">
         <div class="col-3">
             <button class="btn btn-primary">Buscar</button>
@@ -90,9 +79,24 @@
         </div>
     </div>
 
-    <partial name="_TablaPokemonLista" model="Model" />
+    @* <partial name="_TablaPokemonLista" model="Model" /> *@
 
-    
+    @await Html.PartialAsync("_TablaPokemonLista", Model)
+
+    <div class="row">
+        <div class="col-6">
+            <form method="get" action=@Url.Action("PokemonsLista2","Pokemon")>
+                <div class="mb-3">
+                    @Html.TextBox("Buscar", null, new { placeholder = "texto de búsqueda", @class = "form-control"})
+                </div>
+                <button type="submit" class="btn btn-primary">Buscar</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="resultadosTabla"></div>
+
+
     <a asp-action="FormularioPokemon" class="btn btn-primary">Agregar</a>
 
-</div>
+</div> 

@@ -159,7 +159,7 @@ namespace negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("update POKEMONS set Numero = @numero, Nombre = @nombre, Descripcion = @desc, UrlImagen = @img, IdTipo = @idTipo, IdDebilidad = @idDebilidad Where Id = @id");
+                datos.setearConsulta("update POKEMONS set Numero = @numero, Nombre = @nombre, Descripcion = @desc, UrlImagen = @img, IdTipo = @idTipo, IdDebilidad = @idDebilidad, Activo = @activo Where Id = @id");
                 datos.setearParametro("@numero", poke.Numero);
                 datos.setearParametro("@nombre", poke.Nombre);
                 datos.setearParametro("@desc", poke.Descripcion);
@@ -167,6 +167,7 @@ namespace negocio
                 datos.setearParametro("@idTipo", poke.Tipo.Id);
                 datos.setearParametro("@idDebilidad", poke.Debilidad.Id);
                 datos.setearParametro("@id", poke.Id);
+                datos.setearParametro("@activo", poke.Activo);
 
                 datos.ejecutarAccion();
             }

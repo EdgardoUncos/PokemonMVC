@@ -24,7 +24,7 @@ namespace PokemonApp.Controllers
 
         [HttpGet]
         public IActionResult PokemonsLista(string buscar ="")
-        {
+       {
             listaPokemon = _negocio.listar();
 
             if(!string.IsNullOrEmpty(buscar))
@@ -33,12 +33,7 @@ namespace PokemonApp.Controllers
             return View(listaPokemon);
         }
 
-        [HttpGet]
-        public IActionResult PokemonsLista2()
-        {
-            listaPokemon = _negocio.listar();
-            return View(listaPokemon);
-        }
+
 
         [HttpGet]
         public IActionResult FormularioPokemon()
@@ -125,6 +120,14 @@ namespace PokemonApp.Controllers
             return RedirectToAction("Index");
         }
 
+        public IActionResult InactivarPokemon(int id)
+        {
+            Pokemon seleccionado = _negocio.listar(id.ToString())[0];
+            _negocio.eliminarLogico(id, !seleccionado.Activo);
+
+            return RedirectToAction("Index");
+        }
+
         [HttpGet]
         public IActionResult ModificarPokemon2(string id)
         {
@@ -151,6 +154,27 @@ namespace PokemonApp.Controllers
             return RedirectToAction("Index");
         }
 
+        //Seccion Prueba PokemonLista con vistas Parciales
+        [HttpGet]
+        public IActionResult PokemonsLista2(string buscar = "")
+        {
+            
+            listaPokemon = _negocio.listar();
+
+            if (!string.IsNullOrEmpty(buscar))
+                listaPokemon = listaPokemon.FindAll(x => x.Nombre.ToUpper().Contains(buscar.ToUpper()));
+
+            return View(listaPokemon);
+        }
+
+        public IActionResult VistaTablaPokemon(string buscar = "")
+        {
+            listaPokemon = _negocio.listar();
+
+            if (!string.IsNullOrEmpty(buscar))
+                listaPokemon = listaPokemon.FindAll(x => x.Nombre.ToUpper().Contains(buscar.ToUpper()));
+            return PartialView("_TablaPokemonLista", listaPokemon);
+        }
 
 
         //public IEnumerable<SelectListItem> GetSelectListItems(IEnumerable<PokemonApp.Models.Elemento> elements)

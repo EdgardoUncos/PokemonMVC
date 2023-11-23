@@ -51,11 +51,7 @@
                 <label asp-for="Pokemon.Debilidad" class="control-label"></label>
                 @Html.DropDownList("Id", Model.PokemonTipoSelectList as SelectList, "Descripcion", new { @class = "form-control"})
             </div>
-            <div class="form-group">
-                <label asp-for="Pokemon.UrlImagen" class="control-label"></label>
-                <input asp-for="Pokemon.UrlImagen" class="form-control" />
-                <span asp-validation-for="Pokemon.UrlImagen" class="text-danger"></span>
-            </div>
+            
             <div class="form-group">
                 <input type="submit" value="Aceptar" class="btn btn-primary" />
             </div>

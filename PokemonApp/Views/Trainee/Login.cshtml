@@ -1,0 +1,17 @@
+﻿@model dominio.Trainee
+
+<div class="row">
+    <form asp-action="Login" class="col-4">
+        <h2>Login</h2>
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input asp-for="Email" type="text" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input asp-for="Pass" type="password" class="form-control" />
+        </div>
+        <input type="submit" value="Login" class="btn btn-primary"/>
+    </form>
+
+</div>
